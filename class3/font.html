@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fonts in CSS</title>
+  <style>
+    p {
+      font-size: 20px;
+    }
+    /*
+    this will target a p element that has
+    the id of "font-in-pixes". If i change
+    the element to a different HTML tag
+    the target won't work.
+    */
+    p#font-in-pixes {
+      font-size: 40px;
+    }
+
+    #font-in-em {
+      font-size: 2em;
+    }
+
+    #other-css-rules {
+      text-decoration: underline;
+      text-align: center;
+      border: 1px solid red;
+    }
+  </style>
+</head>
+<body>
+    <p id="other-css-rules">
+      Other CSS rules
+    </p>
+  <p id="font-in-pixes">
+    I'm going to target this paragraph
+    with CSS.
+  </p>
+  <p>
+    I'm going to target this paragraph
+    with CSS.
+  </p>
+  <p id="font-in-em">
+    I'm going to target this paragraph
+    with CSS.
+  </p>
+</body>
+</html>

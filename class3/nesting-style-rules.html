@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Styling Nested elements</title>
+  <style>
+    /*
+    this means that we are triggering
+    all divs that are nested in a div
+    which in turn, is nested inside
+    another div.
+    */
+    div span div#sample-1 {
+      color: red;
+    }
+
+    div span div.box {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <div >
+    Box 1
+    <span>
+      Box 2
+      <div id="sample-1">Box 2.1</div>
+      <div>Box 2.2</div>
+      <div>Box 2.3</div>
+    </span>
+  </div>
+
+  <div>
+      Box 1
+      <span>
+        Box 2
+        <div class="box">Box 2.1</div>
+        <div class="box">Box 2.2</div>
+        <div class="box">Box 2.3</div>
+      </span>
+    </div>
+</body>
+</html>
