@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Font</title>
+  <!--
+    this is a way that we can load the fonts directly
+    from google servers
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Pacifico" rel="stylesheet">
+  -->
+  <style>
+    /*
+      in order to use a font directly to its source, we need to use the
+      font-face attribute.
+    */
+    @font-face {
+      font-family: 'Pacifico';
+      src: url('/class5/fonts/Pacifico/Pacifico-Regular.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'PT Sans Narrow';
+      src: url('/class5/fonts/PT_Sans_Narrow/PT_Sans-Narrow-Web-Bold.ttf') format('truetype');
+    }
+    #p1 {
+      font-family: 'Courier New', Courier, monospace;
+    }
+    #p2 {
+      font-family: 'PT Sans Narrow', sans-serif;
+    }
+    #p3 {
+      font-family: 'Pacifico', cursive;
+    }
+  </style>
+</head>
+<body>
+  <p id="p1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate id iusto velit maxime consectetur sit impedit culpa soluta odit, quaerat voluptates, sequi, officiis itaque modi nesciunt explicabo accusantium provident. Dolorem.
+  </p>
+  <p id="p2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate id iusto velit maxime consectetur sit impedit culpa soluta odit, quaerat voluptates, sequi, officiis itaque modi nesciunt explicabo accusantium provident. Dolorem.
+  </p>
+  <p id="p3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate id iusto velit maxime consectetur sit impedit culpa soluta odit, quaerat voluptates, sequi, officiis itaque modi nesciunt explicabo accusantium provident. Dolorem.
+  </p>
+</body>
+</html>
