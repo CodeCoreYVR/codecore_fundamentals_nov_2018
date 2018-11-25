@@ -20,3 +20,46 @@ const counter = {
     this.step = 1;
   }
 };
+
+/**
+ * Syntax for the object is as follows:
+ * 
+ *    const varName = {
+ *      attribute: attributeValue
+ *      attribute1: {number},
+ *      attribute2: {function},
+ *      attribute3: {boolean}
+ *    };
+ * 
+ *    // this is a function
+ *    const funcName = function () {
+ *      
+ *    }
+ *    const funcName = () => {
+ *      
+ *    }
+ *    function funcName() {
+ *      
+ *    }
+ *    
+ *    // this will declare
+ *    const funcName = function (age) {
+ *      
+ *    }
+ *    funcName(36); // this will execute
+ * 
+ *    
+ *    // this will declare
+ *    const funcName = function (func) {
+ *      
+ *    }
+ *    funcName( function(){} ); // this will execute
+ * 
+ * 
+ * 
+ */
+
+
+
+
+
