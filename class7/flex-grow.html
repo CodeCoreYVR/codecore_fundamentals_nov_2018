@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flex example</title>
+  <style>
+
+    #flex-container {
+      display: flex;
+      /*
+      this centers the flex
+      items in the center
+      of the page.
+      */
+      justify-content: center;
+      
+      /* justify-content: space-around; */
+
+      /*
+      this will set each flex item
+      side by side in a row.
+      */
+      flex-direction: row;
+    }
+
+    .flex-item {
+      background-color: cadetblue;
+      color: white;
+      padding: 10px;
+      margin: 5px;
+      flex-grow: 1;
+    }
+
+    #flex-item-2,
+    #flex-item-4 {
+      flex-grow: 2;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="flex-container">
+    <div class="flex-item">1</div>
+    <div id="flex-item-2" class="flex-item">2</div>
+    <div class="flex-item">3</div>
+    <div id="flex-item-4" class="flex-item">4</div>
+    <div class="flex-item">5</div>
+    <div class="flex-item">6</div>
+  </div>
+</body>
+</html>
