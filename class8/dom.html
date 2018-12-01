@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Example of DOM manipulation</title>
+</head>
+<body>
+  <a href="google.ca">Google</a> |
+  <a href="bing.com" id="bing-link">Bing</a> |
+  <a href="yahoo.ca">Yahoo</a>
+  <script>
+    /*
+    i'm using the DOM to manipulate
+    the color of the second link in my page.
+     */
+    for (var index = 0; index < document.links.length; index++) {
+      document.links[index].style.color = 'red';
+    }
+
+    /*
+    I can use ids and classes to target elements
+    */
+    document.getElementById('bing-link').style.color = "green";
+  </script>
+</body>
+</html>

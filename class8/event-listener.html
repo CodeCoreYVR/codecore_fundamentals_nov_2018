@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sample of event listeners</title>
+</head>
+<body>
+  <button id="a-button" type="button">Click ME!!</button>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+
+    // the syntax of jquery is as follows:
+    // $( {selector} )
+    // A valid selector has the format of a CSS selector. For example
+    //
+    //   -- using IDS
+    //   #id-example -> this is a css selector.
+    //   $('#id-example') -> this will return an object that points to
+    //                       an element with the id "id-example"
+    //
+    //   -- using classes
+    //   .class-example -> this is a css selector.
+    //   $('.class-example') -> this will return an object that points to
+    //                       an element with the class "class-example"
+    //
+    //   -- using generic tags
+    //   div -> this is a css selector.
+    //   $('div') -> this will return an object that points to
+    //               a list of div elements
+    //
+    //   -- using complex selectors
+    //   div p -> this is a css selector.
+    //   $('div p') -> this will return an object that points to
+    //                 a list of p elements inside divs.
+
+
+    // this will print a messaGE to the console whe the user
+    // clicks the button
+    document.getElementById('a-button').addEventListener('click', function(){
+      console.log('The button was clicked using vanila JS');
+    });
+  
+    // this is adding an event listener when the cursor is on top of the button
+    document.getElementById('a-button').addEventListener('mouseover', function(){
+      console.log('the cursor went over the button using vanila JS');
+    });
+
+    $('#a-button').click(function() {
+      console.log('The button was clicked using jQuery');
+    });
+
+    $('#a-button').mouseover(function() {
+      console.log('the cursor went over the button using jQuery');
+    });
+
+  </script>
+</html>

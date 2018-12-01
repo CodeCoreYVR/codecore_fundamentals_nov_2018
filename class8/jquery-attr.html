@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hide with jquery</title>
+</head>
+<body>
+    <div id="my-element" data-message="hello world">Box 1</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+  // when the attr method receives a single parameter,
+  // it works as a getter method. A getter method
+  // only accesses the value of such attribute.
+  const initialValue = $('#my-element').attr('data-message');
+  console.log( initialValue );
+
+  // when the attr method receives two parameters,
+  // it works as a setter method. A setter method
+  // will update the value of said attribute.
+  $('#my-element').attr('data-message', 'a new message');
+  const updatedValue = $('#my-element').attr('data-message'); // getter
+  console.log( updatedValue );
+</script>
+</html>
