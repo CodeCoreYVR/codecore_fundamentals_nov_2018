@@ -97,6 +97,7 @@ $(document).ready(function() {
     const value = $('#task-input').val();
     if( value.length > 0) {
       addTaskToFirebase(value);
+      // editTaskInFirebase(key, value);
     }
     $('#task-input').val('');
   });
